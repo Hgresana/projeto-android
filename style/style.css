@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* montserrat */
+
+:root{
+    --cinzaclaro: #C5C5C5;
+    --cinzaescuro: #727B76;
+    --ciano: #159A9C;
+    --azul: #002333;
+
+    --fontstandard: 'Geneva', Verdana, sans-serif; 
+    --fontserra: "montserrat", sans-serif;
+    --fontstrong: "Jersey 10", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cinzaclaro);
+}
+
+header{
+    background-color: var(--azul);
+    color: white;
+    min-height: 130px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > h1{
+    font-family: var(--fontstandard);
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
+}
+
+header > p{
+    font-family: var(--fontserra);
+    font-size: 0.8em;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
+}
+
+nav{
+    background-color: var(--azul);
+    padding: 10px;
+}
+
+nav > a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+nav > a:hover{
+    background-color: var(--ciano);
+    border-radius: 3px;
+}
+
+main{
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
+    font-size: 1.1em;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--ciano);
+}
+
+main a:hover{
+    background-color: var(--cinzaescuro);
+    color: white;
+    margin: 5px 0px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1{
+    color: #159A9C;
+    font-family: var(--fontstrong);
+    font-size: 2.3em;
+}
+
+main h2{
+    font-size: 1.5em;
+    font-family: var(--fontstrong);
+    text-indent: 10px;
+    color: var(--ciano);
+}
+
+div.video{
+    background-color: rgba(128, 128, 128, 0.658);
+    margin: 0px -20px 30px -20px ;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{ 
+    background-color: rgba(128, 128, 128, 0.658);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.432);
+}
+aside > h3{
+    background-color: var(--ciano);
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 8px;
+    color: white;
+}
+
+aside > ul{
+    list-style-position: inside;
+    line-height: 1.3em;
+    columns: 2;
+}
+
+aside abbr{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--azul);
+    color: white;
+    padding: 10px;
+}
